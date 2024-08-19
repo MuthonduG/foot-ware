@@ -1,9 +1,29 @@
+import { headerLogo } from "../assets/images";
+// import { humburger } from "../assets/icons";
+import { navLinks } from "./../constants/index";
+
 const Navbar = () => {
   return (
-    <div>
-      
-    </div>
+    <header className="padding-x py-8 absolute z-10 w-full">
+      <nav className="flex justify-between items-center max-container">
+        <a href="/">
+          <img src={headerLogo} width={130} height={29} alt="footware logo"/>
+        </a>
+        <ul className="flex-1 flex justify-center items-center gap-16 max-lg:hidden">
+          {
+            navLinks.map((item) => (
+              <li key={item.label}>
+                <a href={item.href} className="font-montserrat leading-normal text-lg text-slate-gray">
+                  {item.label}
+                </a>
+              </li>
+            ))
+          };
+        </ul>
+      </nav>
+    </header>
   )
 }
 
-export default Navbar
+export default Navbar;
+
