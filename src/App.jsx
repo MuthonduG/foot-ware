@@ -3,7 +3,7 @@ import { Hero, PopularProducts, SuperQuality, Services, SpecialOffers, CustomerR
 const App = () => (
   <main className="relative">
     < Navbar/>   
-    <section className="xl:passing-1 wise:padding-r padding-b">
+    <section className="xl:padding-l wide:padding-r padding-b">
       <Hero/>
     </section>
     <section className="padding">
