@@ -1,5 +1,5 @@
 import { headerLogo } from "../assets/images";
-// import { humburger } from "../assets/icons";
+import { hamburger } from "../assets/icons";
 import { navLinks } from "./../constants/index";
 
 const Navbar = () => {
@@ -20,6 +20,9 @@ const Navbar = () => {
             ))
           };
         </ul>
+        <div className="hidden max-lg:block">
+          <img src={hamburger} width={25} height={25} alt="img"/>
+        </div>
       </nav>
     </header>
   )
